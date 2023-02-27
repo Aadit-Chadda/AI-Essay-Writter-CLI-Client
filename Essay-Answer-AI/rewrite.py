@@ -36,7 +36,7 @@ def rewording():
             if "Your request has been created successfully" in answer:
                 while True:
                     print('\n\nwaiting...')
-                    time.sleep(12) #ToDo Find better way
+                    time.sleep(122) #ToDo Find better way
                     response = requests.request('POST', url, data=payload, headers=headers)
                     res = response.json()
                     #print(response.text)
@@ -47,7 +47,7 @@ def rewording():
                         break
 
 
-            with open('final-essay.txt', 'a') as ans:
+            with open('final-essay.txt', 'w') as ans:
                 ans.write(answer)
 
             return answer
