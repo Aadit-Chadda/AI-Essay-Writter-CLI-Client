@@ -2,9 +2,10 @@ import os
 import requests
 import openai
 import chatgpt
+#from rewrite import *
 from chatgpt import *
-from rewrite import *
 from newRewrite import *
+from playChecker import *
 
 while True:
     prompt = input("Please Enter Your Question Here (To End Program Enter 'Q'): ")
@@ -16,7 +17,7 @@ while True:
 
     print()
 
-    print('AI Generated Answer:')
+    print('AI Generated Answer: ')
     print()
     print(AI_answer)
 
@@ -25,12 +26,17 @@ while True:
 
     print('\n\n')
 
-    print('Human Reworded Answer')
+    print('Human Reworded Answer: ')
     print()
     print(Reword_answer)
 
     print('\n\n')
 
-print()
+    print('Plaigerism Percentage Detected: ')
+    plaigerism = checkers()
+    print(plaigerism)
+
+print('\n\n')
 print('Program Ended')
 print('*' * 30)
+

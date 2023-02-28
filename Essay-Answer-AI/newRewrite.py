@@ -41,7 +41,7 @@ def paraphrasing():
         my_answer = res["rewrite"]
         answer += "\n" + my_answer
 
-    with open('final-essay.txt', 'w') as ans:
+    with open('final-essay.txt', 'a') as ans:
         ans.write(answer)
 
     #print(answer)
