@@ -4,6 +4,7 @@ import openai
 import chatgpt
 from chatgpt import *
 from rewrite import *
+from newRewrite import *
 
 while True:
     prompt = input("Please Enter Your Question Here (To End Program Enter 'Q'): ")
@@ -19,7 +20,8 @@ while True:
     print()
     print(AI_answer)
 
-    Reword_answer = rewording()
+    #Reword_answer = rewording()
+    Reword_answer = paraphrasing()
 
     print('\n\n')
 

@@ -6,4 +6,9 @@ l1 = len(para)
 print(l)
 print(l1)
 
+with open('essay.txt') as text:
+    a = text.read()
+
+print(a)
+
 
