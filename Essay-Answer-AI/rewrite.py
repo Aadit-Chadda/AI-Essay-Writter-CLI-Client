@@ -52,6 +52,6 @@ def rewording():
 
             return answer
 
-a = rewording()
-print(a)
+#a = rewording()
+#print(a)
 

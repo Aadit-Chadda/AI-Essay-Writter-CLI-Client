@@ -69,12 +69,13 @@ def checkers():
 
         response = requests.request("POST", url, json=payload, headers=headers)
 
+        #print(response.text)
         res = response.json()
         playPercent = res["percentPlagiarism"]
 
-        #print(response.text)
+
         return playPercent
 
 
-checkers()
+#checkers()
 
